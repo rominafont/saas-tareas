@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playpen+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --default-font-color: #11045B;
+    --default-color-yellow: #f4c62c;
+    --hover-color-yellow: #f4c62c;
+    --default-background-color1: #ffffff;
+    --default-background-color2: #f5f2e9;
+    --default-background-color3: #f5edd0;
+}
+
+.Main {
+    background-color: var(--default-background-color2);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+.Logo-img {
+    width: 50px;
+    height: auto;
+}
+
+.Logo-txt {
+    font-family: 'Playpen Sans';
+    color: var(--default-font-color);
+    font-size: 30px;
+}
+
+.Header {
+    pad: 1em;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+.MenuLat {
+    height: 100vh;
+    width: 150px;
+    text-align: center;
+    background-color: var(--default-font-color);
+    color: #ffffff;
+    position: fixed;
+    padding: 1em;
+    padding-top: 6em;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+
+.MenuLat-btn{
+    background-color: var(--default-color-yellow);
+    color: #ffffff;
+    font-family: 'Playpen Sans';
+    font-size: 18px;
+    padding: 1em;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    transform: rotate(-90deg);
+    margin-left: 100px;
+}
