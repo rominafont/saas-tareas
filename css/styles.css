@@ -18,9 +18,59 @@
 }
 
 .Main {
-    background-color: var(--default-background-color2);
+    background-color: var(--default-background-color1);
     font-family: 'Montserrat', sans-serif;
     display: flex;
+}
+
+.MenuLat {
+    height: 100vh;
+    width: 80px;
+    text-align: center;
+    background-color: var(--default-background-color3);
+    color: #ffffff;
+    position: fixed;
+    padding: 1em;
+    padding-top: 6em;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.MenuLat-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 65vh;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.MenuLat-btn {
+    background-color: var(--default-color-yellow);
+    color: #ffffff;
+    font-family: 'Playpen Sans';
+    font-size: 18px;
+    padding: 1em;
+    border-top-right-radius: 25px;
+    width: 200px;
+    margin-left: 20px;
+    margin-left: -70px;
+    border-top-left-radius: 25px;
+    transform: rotate(-90deg);
+}
+
+.MenuLat-addBtn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 30px;
+    background-color: var(--default-font-color);
+    border: 0;
 }
 
 .Logo {
@@ -29,7 +79,7 @@
 }
 
 .Logo-img {
-    width: 50px;
+    width:50px;
     height: auto;
 }
 
@@ -40,47 +90,15 @@
 }
 
 .Header {
-    pad: 1em;
+    padding: 1em;
     display: flex;
     justify-content: space-between;
     margin-left: 120px;
     padding: 1em;
     justify-content: space-between;
+    width: 100vh;
 }
 
-.MenuLat {
-    height: 100vh;
-    width: 100px;
-    text-align: center;
-    background-color: var(--default-background-color3);
-    color: #ffffff;
-    position: fixed;
-    padding: 1em;
-    padding-top: 6em;
-    padding-right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;   
-}
-
-.MenuLat-btns{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 150px;
-    height: 70vh;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.MenuLat-btn{
-    background-color: var(--default-color-yellow);
-    color: #ffffff;
-    font-family: 'Playpen Sans';
-    font-size: 18px;
-    padding: 1em;
-    border-top-right-radius: 25px;
-    width: 200px;
-    border-top-left-radius: 25px;
-    transform: rotate(-90deg);
+.Header-user{
+ font-size: 11px;
 }
