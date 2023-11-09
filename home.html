@@ -14,25 +14,114 @@
 
 <body>
     <div class="Main">
-        
+        <!--Menú lateral-->
         <nav class="MenuLat">
-            <ul class="MenuLat-btns" >
+            <ul class="MenuLat-btns">
                 <li class="MenuLat-btn">Board</li>
                 <li class="MenuLat-btn">Contactos</li>
                 <li class="MenuLat-btn">Calendario</li>
             </ul>
-            <button class="MenuLat-addBtn"><a href="nueva tarea"><i style="color: #ffffff;" class="fa-solid fa-plus"></i></a></button>
+            <button class="MenuLat-addBtn"><a href="nueva tarea"><i style="color: #ffffff;"
+                        class="fa-solid fa-plus"></i></a></button>
         </nav>
-
+        <!--Header: logo + usuario-->
         <header class="Header">
             <a class="Logo" href="./landing.html"><img class="Logo-img" src="./img/planify_logo.svg" alt="Logo Planify">
                 <h1 class="Logo-txt">Planify</h1>
             </a>
 
-            <a href="./home.html">
-                <h2>usuario00</h2><img class="imgRounded" src="" alt="">
+            <a class="Header-user" href="./home.html">
+                <h2>usuario00</h2><img class="imgRounded" src="img/user-01.jpg" alt="">
             </a>
         </header>
+        <!--Contenedor de Tareas-->
+        <section class="Content">
+            <div class="Content-column">
+                <h2 class="Content-title">Pendientes:</h2>
+                <div class="Card">
+                    <div class="Card-top" >
+                        <h2 class="Card-title">Revisar Objetivos Oct 23</h2>
+                        <img class="imgRounded" src="./img/user-02.jpg" alt="Encargado">
+                    </div>
+                    <span class="Card-filter Card-filter-dark">ALTA</span>
+                    <p class="Card-date">Fecha Límite: 11 Nov 2023</p>
+
+                    <div class="Card-btns">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="Card-top" >
+                        <h2 class="Card-title">Revisar Objetivos Oct 23</h2>
+                        <img class="imgRounded" src="./img/user-02.jpg" alt="Encargado">
+                    </div>
+                    <span class="Card-filter Card-filter-dark">ALTA</span>
+                    <p class="Card-date">Fecha Límite: 11 Nov 2023</p>
+
+                    <div class="Card-btns">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="Card-top" >
+                        <h2 class="Card-title">Revisar Objetivos Oct 23</h2>
+                        <img class="imgRounded" src="./img/user-02.jpg" alt="Encargado">
+                    </div>
+                    <span class="Card-filter Card-filter-dark">ALTA</span>
+                    <p class="Card-date">Fecha Límite: 11 Nov 2023</p>
+
+                    <div class="Card-btns">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Content-column">
+                <h2 class="Content-title">En progreso:</h2>
+                <div class="Card">
+                    <div class="Card-top">
+                        <h2 class="Card-title">Preparar reunión 11/12 </h2>
+                        <img class="imgRounded" src="./img/user-02.jpg" alt="Encargado">
+                    </div>
+                    <span class="Card-filter">MEDIA</span>
+                    <p class="Card-date">Fecha Límite: 11 Nov 2023</p>
+
+                    <div class="Card-btns">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="Content-column">
+                <h2 class="Content-title">Completadas:</h2>
+                <div class="Card">
+                    <div class="Card-top">
+                        <h2 class="Card-title">Planificar Noviembre</h2>
+                        <img class="imgRounded" src="./img/user-02.jpg" alt="Encargado">
+                    </div>
+                    <span class="Card-filter Card-filter-light">BAJA</span>
+                    <p class="Card-date">Fecha Límite: 11 Nov 2023</p>
+
+                    <div class="Card-btns">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+
     </div>
 </body>
 
