@@ -242,7 +242,21 @@ h4 {
 }
 
 .bannerContent-policy {
-    display: block;
-    max-width: 50%;
-    padding:3%;
+    background: linear-gradient(153deg, rgba(17, 4, 91, 1) 52%, rgba(244, 198, 44, 1) 90%, rgba(245, 237, 208, 1) 100%);
+    min-height: 100vh;
+    padding: 5% 5% 5% 10%;
+    width: 100%;
 }
+.bannerContent-policy {
+    margin-bottom: 1em;
+    column-count: 3;
+}
+.bannerContent-policy h2, h3, p {
+    margin-top: 1em;
+}
+@media only screen and (max-width: 600px) {
+    .bannerContent-policy {
+        column-count: 1;
+    }
+}
+
