@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-1.css">
+    <title>Landing</title>
+
+</head>
+
+<body>
+    <!--Menú lateral-->
+    <nav class="MenuLat">
+        <ul class="MenuLat-btns">
+            <li class="MenuLat-btn">Board</li>
+            <li class="MenuLat-btn">Contactos</li>
+            <li class="MenuLat-btn">Calendario</li>
+        </ul>
+        <a href="./new-task.html"><button class="MenuLat-addBtn"><i style="color: #ffffff;"
+                    class="fa-solid fa-plus"></i></button></a>
+    </nav>
+
+    <!--Header: logo + usuario-->
+    <header class="Header">
+        <a class="Logo" href="./index.html"><img class="Logo-img" src="./img/planify_logo.svg" alt="Logo Planify">
+            <h1 class="Logo-txt">Planify</h1>
+        </a>
+
+        <a class="Header-user" href="./index.html">
+            <h2>usuario00</h2><img class="imgRounded" src="img/user-01.jpg" alt="">
+        </a>
+    </header>
+
+    <!--Cuerpo principal de la página-->
+    <div class="mainBanner">
+        <div class="heroImage is-white">
+            <h1>BIENVENID@ A PLANIFY</h1>
+            <p>Tu aplicación web para planificar tu trabajo en equipo</p>
+            <div>
+                <img src="img/planify-new-task-001.png" alt="hero image">
+            </div>
+        </div>
+        <div class="bannerContent is-grid-child-align-center">
+            <h2 class="is-white">Nueva tarea</h2>
+
+            <div class="card">
+                <form action="input" id="registryForm">
+                    <label for="new-taskName">Título de tarea</label>
+                    <input type="text" id="name" name="user_name">
+                    <div class="is-two-columns">
+                        <div>
+                            <label for="new-taskEmail">E-mail encargado</label> <br>
+                            <input type="email" id="email" name="user_email">
+                        </div>
+                        <div>
+                            <label for="priority">Prioridad</label> <br>
+                            <select class="u-fullwidth" id="new-taskPriority">
+                                <option value="Alta">Alta</option>
+                                <option value="Media">Media</option>
+                                <option value="Baja">Baja</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="is-three-columns">
+                        <div>
+                            <label for="day">Día</label><br>
+                            <select class="u-fullwidth" id="day">
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">17</option>
+                                <option value="26">18</option>
+                                <option value="27">19</option>
+                                <option value="28">20</option>
+                                <option value="29">21</option>
+                                <option value="30">22</option>
+                                <option value="31">23</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="month">Mes</label> <br>
+                            <select class="u-fullwidth" id="month">
+                                <option value="1">Ene</option>
+                                <option value="2">Feb</option>
+                                <option value="3">Mar</option>
+                                <option value="4">Abr</option>
+                                <option value="5">May</option>
+                                <option value="6">Jun</option>
+                                <option value="7">Jul</option>
+                                <option value="8">Ago</option>
+                                <option value="9">Sep</option>
+                                <option value="10">Oct</option>
+                                <option value="11">Nov</option>
+                                <option value="12">Dic</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="year">Año</label> <br>
+                            <select class="u-fullwidth" id="year">
+                                <option value="1">2023</option>
+                                <option value="2">2024</option>
+                                <option value="3">2025</option>
+                                <option value="4">2026</option>
+                                <option value="5">2027</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label for="description">Descripción</label>
+                    <textarea class="form__input" name="description" id="new-taskDescription" cols="30"
+                        rows="6"></textarea>
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
