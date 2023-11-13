@@ -17,13 +17,13 @@
         <!--Menú lateral-->
         <nav class="MenuLat">
             <div class="MenuLat-btns">
-                <a class="MenuLat-btn" href="./home.html">
+                <a class="MenuLat-btn" href="./home.html" id="home" onclick="nav('home')">
                     Board
                 </a>
-                <a class="MenuLat-btn" href="./directory.html">
+                <a class="MenuLat-btn" href="./directory.html" id="directory" onclick="nav('directory')">
                     Equipo
                 </a>
-                <a class="MenuLat-btn" href="./calendar.html">
+                <a class="MenuLat-btn" href="./calendar.html" id="calendar" onclick="nav('calendar')">
                     Calendario
                 </a>
             </div>
@@ -44,7 +44,8 @@
         <section class="Calendar">
             <h1 class="Calendar-title">¡Planify Calendar disponible muy pronto!</h1>
             <br><br>
-            <p class="Calendar-txt">Descubre la nueva dimensión de la organización con el Calendario Inteligente de Planify,
+            <p class="Calendar-txt">Descubre la nueva dimensión de la organización con el Calendario Inteligente de
+                Planify,
                 ahora disponible en la última actualización 2.6. Diseñado para simplificar tu vida, nuestro calendario
                 te permite visualizar tus eventos, tareas y reuniones de una manera intuitiva y elegante. Con funciones
                 avanzadas de programación, recordatorios personalizables y una interfaz fácil de usar, el Calendario
@@ -56,11 +57,11 @@
 
         <footer class="Footer">
             <div class="Footer-top">
-                <a class="Logo Logo-small" href="./landing.html"><img class="Logo-img" src="./img/planify_logo_white.svg"
-                        alt="Logo Planify">
+                <a class="Logo Logo-small" href="./landing.html"><img class="Logo-img"
+                        src="./img/planify_logo_white.svg" alt="Logo Planify">
                     <h1 class="Logo-txt Logo-White">Planify</h1>
                 </a>
-    
+
                 <nav class="Footer-menu">
                     <a class="Footer-menu-btn" href="./home.html">
                         Board
@@ -74,19 +75,35 @@
                     <a class="Footer-menu-btn" href="privacidad.html">
                         Política de Privacidad
                     </a>
-    
+
                 </nav>
-    
+
                 <a class="Footer-user" href="./home.html">
                     <h2>Flora Silva</h2><img class="imgRounded" src="img/user-01.jpg" alt="">
                 </a>
             </div>
-    
-            <p class="Copyright">Copyright Planify 2023</p>
-    
-        </footer>
 
+            <p class="Copyright">Copyright Planify 2023</p>
+
+        </footer>
     </div>
+    
+    <script>
+        // Botones activos del Menú --solo al hacer click :(--
+        function nav(window) {
+            var btnMenu = document.querySelectorAll('.MenuLat-btn');
+
+            btnMenu.forEach(function (btn) {
+                btn.classList.remove('Btn-act');
+            });
+
+
+            document.getElementById(window).classList.add('Btn-act');
+
+        }
+    </script>
+
+
 </body>
 
 </html>

@@ -14,16 +14,16 @@
 
 <body>
     <div class="Main">
-        <!--Menú lateral-->
-        <nav class="MenuLat">
+         <!--Menú lateral-->
+         <nav class="MenuLat">
             <div class="MenuLat-btns">
-                <a class="MenuLat-btn" href="./home.html">
+                <a class="MenuLat-btn" href="./home.html" id="home" onclick="nav('home')">
                     Board
                 </a>
-                <a class="MenuLat-btn" href="./directory.html">
+                <a class="MenuLat-btn" href="./directory.html" id="directory" onclick="nav('directory')">
                     Equipo
                 </a>
-                <a class="MenuLat-btn" href="./calendar.html">
+                <a class="MenuLat-btn" href="./calendar.html" id="calendar" onclick="nav('calendar')">
                     Calendario
                 </a>
             </div>
@@ -138,7 +138,23 @@
     
         </footer>
 
+
     </div>
+
+    <script>
+        // Botones activos del Menú --solo al hacer click :(--
+    function nav(window) {
+        var btnMenu = document.querySelectorAll('.MenuLat-btn');
+
+        btnMenu.forEach(function(btn) {
+            btn.classList.remove('Btn-act');
+        });
+
+        
+        document.getElementById(window).classList.add('Btn-act');
+       
+    }
+    </script>
 </body>
 
 </html>

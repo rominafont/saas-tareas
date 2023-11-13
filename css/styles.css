@@ -68,6 +68,11 @@
     border: 0;
 }
 
+.Btn-act{
+    background-color: var(--default-font-color);
+    color: #ffffff;
+}
+
 /*Logo Planify*/
 .Logo {
     display: flex;
@@ -86,11 +91,11 @@
     font-size: 30px;
 }
 
-.Logo-White{
+.Logo-White {
     color: var(--default-background-color1);
 }
 
-.Logo-small{
+.Logo-small {
     scale: 0.7;
 }
 
@@ -128,7 +133,7 @@
 }
 
 /*Footer*/
-.Footer{
+.Footer {
     color: var(--default-background-color1);
     background-color: var(--default-font-color);
     display: flex;
@@ -140,31 +145,31 @@
     height: 300px;
 }
 
-.Footer-menu{
+.Footer-menu {
     color: var(--default-background-color1);
     display: flex;
     margin: 1em;
 }
 
-.Footer-top{
+.Footer-top {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.Footer-menu-btn{
+.Footer-menu-btn {
     display: inline;
     color: #ffffff;
     font-family: 'Montserrat';
 }
 
-.Footer-menu{
+.Footer-menu {
     display: flex;
     gap: 30px;
 }
 
-.Footer-user{
+.Footer-user {
     font-size: 10px;
     font-family: 'Playpen Sans';
     font-weight: 400;
@@ -173,11 +178,11 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    justify-content: space-around; 
+    justify-content: space-around;
     width: 200px;
 }
 
-.Copyright{
+.Copyright {
     color: var(--default-background-color1);
     text-align: center;
     width: 100%;
@@ -196,11 +201,18 @@
 
 .Content {
     margin-left: 120px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
     color: var(--default-font-color);
     margin-bottom: 200px;
+}
+
+@media (max-width: 768px) {
+    .Content {
+        flex-direction: column; 
+    }
 }
 
 .Card {
@@ -251,36 +263,36 @@
     color: var(--default-font-color);
 }
 
-.Card-date{
+.Card-date {
     font-size: 13px;
     font-weight: 600;
 }
 
-.Card-btns{
+.Card-btns {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
 }
 
 /*Página Principal - Historial*/
-.Content-column-dark{
+.Content-column-dark {
     background-color: var(--default-font-color);
     border-radius: 30px;
-    margin: 3%;
+    margin: 1%;
     padding: 1em;
 }
 
-.Historial-title{
+.Historial-title {
     color: var(--default-background-color1);
     font-family: 'Playpen Sans';
     font-size: 18px;
     text-align: right;
 }
 
-.Historial-card{
+.Historial-card {
     background-color: var(--default-background-color1);
     color: var(--default-font-color);
-    border-radius: 30px;
+    border-radius: 15px;
     box-shadow: 5px 7px 14px 1px rgba(20, 20, 20, 0.1);
     padding: 0.5em;
     margin-top: 20px;
@@ -295,61 +307,83 @@
     align-items: center;
 }
 
-.Historial-card-name{
+.Historial-card-name {
     font-family: 'Playpen Sans';
     font-size: 15px;
 }
 
-.Historial-card-title{
+.Historial-card-title {
     font-size: 12px;
     font-weight: bold;
     text-align: center;
 }
 
-.Historial-card-time{
+.Historial-card-time {
     font-size: 12px;
     font-style: italic;
     text-align: center;
 }
 
+.Btn-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--default-color-yellow);
+    color: var(--default-background-color1);
+    border: none;
+    padding: 15px;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 5px 7px 14px 1px rgba(20, 20, 20, 0.1);
+}
 
-/*Página - Directorio COntactos - Equipo*/
-.Directory-card-top{
+.Box-popup {
+    display: none;
+}
+
+
+/*Página - Directorio Contactos - Equipo*/
+.Directory-card-top {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.Directory-card-name{
+.Directory-card-name {
     font-family: 'Playpen Sans';
     font-size: 18px;
 }
 
-.Directory-card-title{
+.Directory-card-title {
     font-size: 12px;
     font-weight: bold;
     text-align: center;
 }
 
-.Directory-card-time{
+.Directory-card-time {
     font-size: 12px;
     font-style: italic;
     text-align: center;
 }
 
-.Directory-card-bottom{
+.Directory-card-bottom {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 10px;
 }
 
-.Directory-card-num{
+.Directory-card-num {
     font-size: 12px;
     font-weight: bold;
     text-align: center;
 }
 
-.Directory-card-subtitle{
+.Directory-card-subtitle {
     font-size: 12px;
     font-weight: bold;
     text-align: center;
@@ -358,7 +392,7 @@
 
 
 /*Página - Política Privacidad*/
-.Calendar{
+.Calendar {
     margin-left: 10%;
     margin-right: 3%;
     margin-bottom: 200px;
@@ -372,14 +406,14 @@
     justify-content: center;
 }
 
-.Calendar-title{
+.Calendar-title {
     font-family: 'Playpen Sans';
     font-size: 30px;
     margin: 1em;
     text-align: center;
 }
 
-.Calendar-txt{
+.Calendar-txt {
     font-family: 'Montserrat';
     font-size: 15px;
     margin: 1em;
@@ -388,7 +422,7 @@
 
 
 /*Página - Política Privacidad*/
-.Privacidad{
+.Privacidad {
     margin-left: 10%;
     margin-right: 3%;
     margin-bottom: 200px;
@@ -396,18 +430,18 @@
     color: var(--default-font-color);
 }
 
-.Privacidad-title{
+.Privacidad-title {
     font-family: 'Playpen Sans';
     font-size: 30px;
 }
 
-.Privacidad-subtitle{
+.Privacidad-subtitle {
     font-family: 'Playpen Sans';
     font-size: 18px;
     margin: 1em;
 }
 
-.Privacidad-txt{
+.Privacidad-txt {
     font-family: 'Montserrat';
     font-size: 13px;
     margin: 1em;
