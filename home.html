@@ -16,11 +16,17 @@
     <div class="Main">
         <!--Menú lateral-->
         <nav class="MenuLat">
-            <ul class="MenuLat-btns">
-                <li class="MenuLat-btn">Board</li>
-                <li class="MenuLat-btn">Contactos</li>
-                <li class="MenuLat-btn">Calendario</li>
-            </ul>
+            <div class="MenuLat-btns">
+                <a class="MenuLat-btn" href="./home.html">
+                    Board
+                </a>
+                <a class="MenuLat-btn" href="./directory.html">
+                    Equipo
+                </a>
+                <a class="MenuLat-btn" href="./calendar.html">
+                    Calendario
+                </a>
+            </div>
             <button class="MenuLat-addBtn"><a href="nueva tarea"><i style="color: #ffffff;"
                         class="fa-solid fa-plus"></i></a></button>
         </nav>
@@ -31,20 +37,25 @@
             </a>
 
             <a class="Header-user" href="./home.html">
-                <h2>usuario00</h2><img class="imgRounded" src="img/user-01.jpg" alt="">
+                <h2>Flora Silva</h2><img class="imgRounded" src="img/user-01.jpg" alt="">
             </a>
         </header>
+
+
         <!--Contenedor de Tareas-->
         <section class="Content">
+
+
+            <!--Pendientes-->
             <div class="Content-column">
                 <h2 class="Content-title">Pendientes:</h2>
                 <div class="Card">
-                    <div class="Card-top" >
-                        <h2 class="Card-title">Revisar Objetivos Oct 23</h2>
+                    <div class="Card-top">
+                        <h2 class="Card-title">BLACK FRIDAY</h2>
                         <img class="imgRounded" src="./img/user-02.jpg" alt="Encargado">
                     </div>
                     <span class="Card-filter Card-filter-dark">ALTA</span>
-                    <p class="Card-date">Fecha Límite: 11 Nov 2023</p>
+                    <p class="Card-date">Fecha Límite: 16 Nov 2023</p>
 
                     <div class="Card-btns">
                         <i class="fa-solid fa-chevron-left"></i>
@@ -53,12 +64,12 @@
                 </div>
 
                 <div class="Card">
-                    <div class="Card-top" >
-                        <h2 class="Card-title">Revisar Objetivos Oct 23</h2>
-                        <img class="imgRounded" src="./img/user-02.jpg" alt="Encargado">
+                    <div class="Card-top">
+                        <h2 class="Card-title">Campaña Navidad</h2>
+                        <img class="imgRounded" src="./img/user-04.jpg" alt="Encargado">
                     </div>
-                    <span class="Card-filter Card-filter-dark">ALTA</span>
-                    <p class="Card-date">Fecha Límite: 11 Nov 2023</p>
+                    <span class="Card-filter">MEDIA</span>
+                    <p class="Card-date">Fecha Límite: 29 Nov 2023</p>
 
                     <div class="Card-btns">
                         <i class="fa-solid fa-chevron-left"></i>
@@ -67,12 +78,12 @@
                 </div>
 
                 <div class="Card">
-                    <div class="Card-top" >
-                        <h2 class="Card-title">Revisar Objetivos Oct 23</h2>
-                        <img class="imgRounded" src="./img/user-02.jpg" alt="Encargado">
+                    <div class="Card-top">
+                        <h2 class="Card-title">Programar Meta DIC</h2>
+                        <img class="imgRounded" src="./img/user-01.jpg" alt="Encargado">
                     </div>
-                    <span class="Card-filter Card-filter-dark">ALTA</span>
-                    <p class="Card-date">Fecha Límite: 11 Nov 2023</p>
+                    <span class="Card-filter Card-filter-light">BAJA</span>
+                    <p class="Card-date">Fecha Límite: 30 Nov 2023</p>
 
                     <div class="Card-btns">
                         <i class="fa-solid fa-chevron-left"></i>
@@ -81,25 +92,39 @@
                 </div>
             </div>
 
+            <!--Progreso-->
             <div class="Content-column">
                 <h2 class="Content-title">En progreso:</h2>
                 <div class="Card">
                     <div class="Card-top">
-                        <h2 class="Card-title">Preparar reunión 11/12 </h2>
-                        <img class="imgRounded" src="./img/user-02.jpg" alt="Encargado">
+                        <h2 class="Card-title">Preparar reunión 16/11</h2>
+                        <img class="imgRounded" src="./img/user-03.jpg" alt="Encargado">
                     </div>
                     <span class="Card-filter">MEDIA</span>
-                    <p class="Card-date">Fecha Límite: 11 Nov 2023</p>
+                    <p class="Card-date">Fecha Límite: 13 Nov 2023</p>
 
                     <div class="Card-btns">
                         <i class="fa-solid fa-chevron-left"></i>
                         <i class="fa-solid fa-chevron-right"></i>
                     </div>
+                </div>
 
+                <div class="Card">
+                    <div class="Card-top">
+                        <h2 class="Card-title">Contenido Black Friday</h2>
+                        <img class="imgRounded" src="./img/user-01.jpg" alt="Encargado">
+                    </div>
+                    <span class="Card-filter Card-filter-dark">ALTA</span>
+                    <p class="Card-date">Fecha Límite: 20 Nov 2023</p>
 
+                    <div class="Card-btns">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
                 </div>
             </div>
 
+            <!--Completadas-->
             <div class="Content-column">
                 <h2 class="Content-title">Completadas:</h2>
                 <div class="Card">
@@ -114,14 +139,111 @@
                         <i class="fa-solid fa-chevron-left"></i>
                         <i class="fa-solid fa-chevron-right"></i>
                     </div>
+                </div>
 
+                <div class="Card">
+                    <div class="Card-top">
+                        <h2 class="Card-title">Campaña Final Verano</h2>
+                        <img class="imgRounded" src="./img/user-04.jpg" alt="Encargado">
+                    </div>
+                    <span class="Card-filter Card-filter-dark">ALTA</span>
+                    <p class="Card-date">Fecha Límite: 18 Ago 2023</p>
 
+                    <div class="Card-btns">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="Card-top">
+                        <h2 class="Card-title">Objetivos KPIs</h2>
+                        <img class="imgRounded" src="./img/user-01.jpg" alt="Encargado">
+                    </div>
+                    <span class="Card-filter">MEDIA</span>
+                    <p class="Card-date">Fecha Límite: 08 Oct 2023</p>
+
+                    <div class="Card-btns">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
                 </div>
             </div>
 
+            <!--Historial-->
+            <div class="Content-column Content-column-dark">
+                <h3 class="Historial-title">Cómo avanza el equipo:</h3>
+                <div class="Historial-card">
+                    <div class="Historial-card-top">
+                        <img class="imgRounded" src="./img/user-02.jpg" alt="Encargado">
+                        <h2 class="Historial-card-name">María</h2>
+                    </div>
+                    <p class="Historial-card-title">ha modificado: Black Friday</p>
+                    <p class="Historial-card-time">hace 15 minutos</p>
+                </div>
+
+                <div class="Historial-card">
+                    <div class="Historial-card-top">
+                        <img class="imgRounded" src="./img/user-03.jpg" alt="Encargado">
+                        <h2 class="Historial-card-name">Azucena</h2>
+                    </div>
+                    <p class="Historial-card-title">ha comenzado: Preparar reunión 16/11</p>
+                    <p class="Historial-card-time">hace 2 horas</p>
+                </div>
+
+                <div class="Historial-card">
+                    <div class="Historial-card-top">
+                        <img class="imgRounded" src="./img/user-01.jpg" alt="Encargado">
+                        <h2 class="Historial-card-name">Flora</h2>
+                    </div>
+                    <p class="Historial-card-title">ha comenzado: Contenido Black Friday</p>
+                    <p class="Historial-card-time">hace 3 días</p>
+                </div>
+
+
+                <div class="Historial-card">
+                    <div class="Historial-card-top">
+                        <img class="imgRounded" src="./img/user-04.jpg" alt="Encargado">
+                        <h2 class="Historial-card-name">Karima</h2>
+                    </div>
+                    <p class="Historial-card-title">ha terminado: Campaña Final Verano</p>
+                    <p class="Historial-card-time">hace 2 meses</p>
+                </div>
+
+            </div>
         </section>
 
-
+        <footer class="Footer">
+            <div class="Footer-top">
+                <a class="Logo Logo-small" href="./landing.html"><img class="Logo-img" src="./img/planify_logo_white.svg"
+                        alt="Logo Planify">
+                    <h1 class="Logo-txt Logo-White">Planify</h1>
+                </a>
+    
+                <nav class="Footer-menu">
+                    <a class="Footer-menu-btn" href="./home.html">
+                        Board
+                    </a>
+                    <a class="Footer-menu-btn" href="./directory.html">
+                        Equipo
+                    </a>
+                    <a class="Footer-menu-btn" href="./calendar.html">
+                        Calendario
+                    </a>
+                    <a class="Footer-menu-btn" href="privacidad.html">
+                        Política de Privacidad
+                    </a>
+    
+                </nav>
+    
+                <a class="Footer-user" href="./home.html">
+                    <h2>Flora Silva</h2><img class="imgRounded" src="img/user-01.jpg" alt="">
+                </a>
+            </div>
+    
+            <p class="Copyright">Copyright Planify 2023</p>
+    
+        </footer>
     </div>
 </body>
 
