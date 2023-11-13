@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playpen+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --default-font-color: #11045B;
+    --default-color-yellow: #f4c62c;
+    --hover-color-yellow: #f4c62c;
+    --default-background-color1: #ffffff;
+    --default-background-color2: #f5f2e9;
+    --default-background-color3: #f5edd0;
+}
+
+/*Menú Lateral - Estilo Agenda*/
+.MenuLat {
+    height: 100vh;
+    width: 78px;
+    text-align: center;
+    background-color: var(--default-background-color1);
+    color: #ffffff;
+    position: fixed;
+    padding: 1em;
+    padding-top: 6em;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.MenuLat-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 65vh;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.MenuLat-btn {
+    background-color: var(--default-color-yellow);
+    color: #ffffff;
+    font-family: 'Playpen Sans';
+    font-size: 18px;
+    padding: 1em;
+    border-top-right-radius: 25px;
+    width: 200px;
+    margin-left: 20px;
+    margin-left: -70px;
+    border-top-left-radius: 25px;
+    transform: rotate(-90deg);
+}
+
+.MenuLat-addBtn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 30px;
+    background-color: var(--default-font-color);
+    border: 0;
+}
+
+.Btn-act{
+    background-color: var(--default-font-color);
+    color: #ffffff;
+}
+
+/*Logo Planify*/
+.Logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.Logo-img {
+    width: 50px;
+    height: auto;
+}
+
+.Logo-txt {
+    font-family: 'Playpen Sans';
+    color: var(--default-font-color);
+    font-size: 30px;
+}
+
+.Logo-White {
+    color: var(--default-background-color1);
+}
+
+.Logo-small {
+    scale: 0.7;
+}
+
+/*Header Planify*/
+.Header {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 70px;
+    padding: 1em;
+    width: 90vw;
+}
+
+.Header-user {
+    font-size: 11px;
+    font-family: 'Playpen Sans';
+    font-weight: 400;
+    color: var(--default-font-color);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60%;
+    justify-content: end;
+}
+
+.imgRounded {
+    margin: 2%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white;
+}
+
+/*Footer*/
+.Footer {
+    color: var(--default-background-color1);
+    background-color: var(--default-font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 70px;
+    padding: 1em;
+    height: 300px;
+}
+
+.Footer-menu {
+    color: var(--default-background-color1);
+    display: flex;
+    margin: 1em;
+}
+
+.Footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer-menu-btn {
+    display: inline;
+    color: #ffffff;
+    font-family: 'Montserrat';
+}
+
+.Footer-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.Footer-user {
+    font-size: 10px;
+    font-family: 'Playpen Sans';
+    font-weight: 400;
+    color: var(--default-background-color1);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.Copyright {
+    color: var(--default-background-color1);
+    text-align: center;
+    width: 100%;
+    font-size: 11px;
+    font-family: 'Montserrat';
+}
+
+
+/*Página Principal - Board*/
+.Main {
+    background-color: var(--default-background-color2);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.Content {
+    margin-left: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    color: var(--default-font-color);
+    margin-bottom: 200px;
+}
+
+@media (max-width: 768px) {
+    .Content {
+        flex-direction: column; 
+    }
+}
+
+.Card {
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-shadow: 5px 7px 14px 1px rgba(20, 20, 20, 0.1);
+    padding: 2em;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    height: 250px;
+}
+
+.Content-title {
+    font-family: 'Playpen Sans';
+    font-size: 25px;
+    margin: 1em;
+}
+
+.Card-title {
+    font-family: 'Playpen Sans';
+    font-size: 18px;
+}
+
+.Card-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Card-filter {
+    border-radius: 5px;
+    background-color: var(--default-color-yellow);
+    padding: 2px;
+    color: var(--default-background-color1);
+    width: 50%;
+    text-align: center;
+}
+
+.Card-filter-dark {
+    background-color: var(--default-font-color);
+}
+
+.Card-filter-light {
+    background-color: var(--default-background-color3);
+    color: var(--default-font-color);
+}
+
+.Card-date {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.Card-btns {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/*Página Principal - Historial*/
+.Content-column-dark {
+    background-color: var(--default-font-color);
+    border-radius: 30px;
+    margin: 1%;
+    padding: 1em;
+}
+
+.Historial-title {
+    color: var(--default-background-color1);
+    font-family: 'Playpen Sans';
+    font-size: 18px;
+    text-align: right;
+}
+
+.Historial-card {
+    background-color: var(--default-background-color1);
+    color: var(--default-font-color);
+    border-radius: 15px;
+    box-shadow: 5px 7px 14px 1px rgba(20, 20, 20, 0.1);
+    padding: 0.5em;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Historial-card-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Historial-card-name {
+    font-family: 'Playpen Sans';
+    font-size: 15px;
+}
+
+.Historial-card-title {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Historial-card-time {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+.Btn-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--default-color-yellow);
+    color: var(--default-background-color1);
+    border: none;
+    padding: 15px;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 5px 7px 14px 1px rgba(20, 20, 20, 0.1);
+}
+
+.Box-popup {
+    display: none;
+}
+
+
+/*Página - Directorio Contactos - Equipo*/
+.Directory-card-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Directory-card-name {
+    font-family: 'Playpen Sans';
+    font-size: 18px;
+}
+
+.Directory-card-title {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Directory-card-time {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+.Directory-card-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.Directory-card-num {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Directory-card-subtitle {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Playpen Sans';
+}
+
+
+/*Página - Política Privacidad*/
+.Calendar {
+    margin-left: 10%;
+    margin-right: 3%;
+    margin-bottom: 200px;
+    text-align: justify;
+    background-color: var(--default-background-color1);
+    color: var(--default-font-color);
+    border-radius: 30px;
+    box-shadow: 5px 7px 14px 1px rgba(20, 20, 20, 0.1);
+    padding: 0.2em;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.Calendar-title {
+    font-family: 'Playpen Sans';
+    font-size: 30px;
+    margin: 1em;
+    text-align: center;
+}
+
+.Calendar-txt {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    margin: 1em;
+    padding: 1em;
+}
+
+
+/*Página - Política Privacidad*/
+.Privacidad {
+    margin-left: 10%;
+    margin-right: 3%;
+    margin-bottom: 200px;
+    text-align: justify;
+    color: var(--default-font-color);
+}
+
+.Privacidad-title {
+    font-family: 'Playpen Sans';
+    font-size: 30px;
+}
+
+.Privacidad-subtitle {
+    font-family: 'Playpen Sans';
+    font-size: 18px;
+    margin: 1em;
+}
+
+.Privacidad-txt {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    margin: 1em;
+    margin-bottom: 50px;
+}
